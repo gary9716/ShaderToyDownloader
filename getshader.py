@@ -37,7 +37,10 @@ uniform float     iChannelTime[4];       // channel playback time (in seconds)
 uniform vec3      iChannelResolution[4]; // channel resolution (in pixels)
 uniform vec4      iMouse;                // mouse pixel coords. xy: current (if MLB down), zw: click
 uniform vec4      iDate;                 // (year, month, day, time in secs)
-uniform float     iSampleRate;           // sound sample rate (i.e., 44100)
+uniform float     iSampleRate;
+uniform float     iFrame;
+uniform float     iTimeDelta;
+
 #define iChannel0 sTD2DInputs[0]
 #define iChannel1 sTD2DInputs[1]
 #define iChannel2 sTD2DInputs[2]
